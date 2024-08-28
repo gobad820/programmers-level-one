@@ -1,5 +1,5 @@
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=190&section=header&text=프로그래머즈 정리&fontSize=70" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=190&section=header&text=프로그래머즈 정리&fontSize=70"/>
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/gobad820/programmers-level-one)
 ![GitHub repo size](https://img.shields.io/github/repo-size/gobad820/programmers-level-one)
