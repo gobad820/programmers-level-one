@@ -14,22 +14,21 @@ def update_readme():
         content = file.read()
 
     # 문제 목록 섹션 찾기
-    problem_list_section = re.search(r'(## 문제 목록\n\|.+\n\|.+\n)((?:\|.+\n)+)', content, re.DOTALL)
+    problem_list_section = re.search(r'(## 문제 목록\n\| 문제 이름\s+\| 완료 여부\s+\| 날짜 \|[\s\S]+?)(\*\*현재 진행 상황)', content)
 
     if not problem_list_section:
         print("문제 목록 섹션을 찾을 수 없습니다.")
         return
 
-    header = problem_list_section.group(1)
-    problem_list = problem_list_section.group(2)
-    lines = problem_list.strip().split('\n')
+    problem_list = problem_list_section.group(1)
+    lines = problem_list.splitlines()
 
     # 각 문제에 대한 상태 업데이트
-    new_lines = []
-    updated_any = False
+    new_lines = [lines[0]]  # 헤더
+    updated_any = False  # 업데이트된 내용이 있는지 확인하는 플래그
 
-    for line in lines:
-        match = re.match(r'\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|', line)
+    for line in lines[1:]:
+        match = re.match(r'\| (.+?) \| ([^\|]+) \| ([^\|]+) \|', line)
         if match:
             problem_name = match.group(1).strip()
             is_completed = match.group(2).strip()
@@ -43,8 +42,6 @@ def update_readme():
                 print(f"Solution found for {problem_name}: {solution_files[0]}")
                 is_completed = '✅'
                 date_completed = datetime.now().strftime('%Y/%m/%d')
-
-                # URL 인코딩 적용
                 encoded_problem_name = quote(problem_name)
                 encoded_file_name = quote(solution_files[0])
 
@@ -60,7 +57,7 @@ def update_readme():
             new_lines.append(line)
 
     # 업데이트된 내용을 삽입
-    updated_content = content.replace(problem_list_section.group(0), header + '\n'.join(new_lines) + '\n')
+    updated_content = content.replace(problem_list_section.group(1), '\n'.join(new_lines) + '\n')
 
     if updated_any:
         with open(README_PATH, 'w', encoding='utf-8') as file:
