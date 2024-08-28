@@ -38,7 +38,7 @@ def update_readme():
             if solution_files:
                 is_completed = '✅'
                 date_completed = datetime.now().strftime('%Y/%m/%d')
-                problem_link = f'[링크](solutions/{problem_name}/{solution_files[0]})'
+                problem_link = f'[{problem_name}](solutions/{problem_name}/{solution_files[0]})'
             else:
                 is_completed = '-'
                 date_completed = '-'
