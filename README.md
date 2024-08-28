@@ -33,7 +33,7 @@
 | 실패율 | - | - |
 | \[1차\] 다트 게임 | - | - |
 | [둘만의 암호](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EB%91%98%EB%A7%8C%EC%9D%98%20%EC%95%94%ED%98%B8/test.cc) | ✅ | 2024/08/28 |
-| 로또의 최고 순위와 최저 순위 | - | - |
+| [로또의 최고 순위와 최저 순위](https://github.com/gobad820/programmers-level-one/blob/main/solutions/로또의 최고 순위와 최저 순위/tes.cc) | ✅ | 2024/08/28 |
 | \[PCCE 기출문제\] 9번 / 이웃한 칸 | - | - |
 | 햄버거 만들기 | - | - |
 | 크레인 인형뽑기 게임 | - | - |
