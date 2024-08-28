@@ -1,63 +1,58 @@
 import os
 import re
 from datetime import datetime
-from github import Github
 
-def get_problem_info(directory):
-    problems = {}
-    for root, dirs, files in os.walk(directory):
-        for file in files:
-            if file.endswith('.cc'):
-                problem_name = os.path.basename(os.path.dirname(os.path.join(root, file)))
-                file_path = os.path.relpath(os.path.join(root, file), directory)
-                problems[problem_name] = file_path
-                print(f"Found problem: {problem_name} at {file_path}")  # 디버깅용
-    return problems
+# README 파일 경로
+README_PATH = 'README.md'
 
-def update_readme(problems):
-    with open('README.md', 'r', encoding='utf-8') as f:
-        content = f.read()
+# solutions 디렉토리 경로
+SOLUTIONS_DIR = 'solutions'
 
-    table_pattern = r'\| 문제 이름.*?\n(.*?)\n\n'
-    table_content = re.search(table_pattern, content, re.DOTALL)
+def update_readme():
+    with open(README_PATH, 'r', encoding='utf-8') as file:
+        content = file.read()
 
-    if table_content:
-        lines = table_content.group(1).split('\n')
-        updated_lines = []
-        completed_count = 0
-        total_count = len(lines)
+    # 문제 목록 섹션 찾기
+    problem_list_section = re.search(r'(## 문제 목록\n\n\| 문제 이름 \| 완료 여부 \| 날짜 \|[\s\S]+?\n)(\*\*현재 진행 상황)', content)
 
-        for line in lines:
-            match = re.search(r'\| \[(.*?)\].*?\| (.*?) \|', line)
-            if match:
-                problem_name, status = match.groups()
-                problem_key = problem_name.replace(' ', '')  # 공백 제거
-                if problem_key in problems:
-                    file_path = problems[problem_key]
-                    updated_line = f"| [{problem_name}](solutions/{file_path}) | ✅ | {datetime.now().strftime('%Y/%m/%d')} |"
-                    completed_count += 1
-                    print(f"Updating line: {updated_line}")  # 디버깅용
-                elif status.strip() == '✅':
-                    completed_count += 1
-                    updated_line = line
-                else:
-                    updated_line = f"| [{problem_name}] | - | - |"
+    if not problem_list_section:
+        print("문제 목록 섹션을 찾을 수 없습니다.")
+        return
+
+    problem_list = problem_list_section.group(1)
+    lines = problem_list.splitlines()
+
+    # 각 문제에 대한 상태 업데이트
+    new_lines = [lines[0]]  # 헤더
+    for line in lines[1:]:
+        match = re.match(r'\| \[(.+)\] \| ([^\|]+) \| ([^\|]+) \|', line)
+        if match:
+            problem_name = match.group(1)
+            is_completed = match.group(2)
+            date_completed = match.group(3)
+
+            # 해당 문제에 대한 솔루션 파일 경로
+            solution_dir = os.path.join(SOLUTIONS_DIR, problem_name)
+            solution_files = [f for f in os.listdir(solution_dir) if f.endswith('.cc')] if os.path.exists(solution_dir) else []
+
+            if solution_files:
+                is_completed = '✅'
+                date_completed = datetime.now().strftime('%Y/%m/%d')
+                problem_link = f'[링크](solutions/{problem_name}/{solution_files[0]})'
             else:
-                updated_line = line
-            updated_lines.append(updated_line)
+                is_completed = '-'
+                date_completed = '-'
+                problem_link = problem_name
 
-        new_table_content = '\n'.join(updated_lines)
-        new_content = re.sub(table_pattern, f'| 문제 이름 | 완료 여부 | 날짜 |\n{new_table_content}\n\n', content, flags=re.DOTALL)
+            new_line = f'| {problem_link} | {is_completed} | {date_completed} |'
+            new_lines.append(new_line)
+        else:
+            new_lines.append(line)
 
-        progress = f"**현재 진행 상황: {completed_count}/{total_count} ({completed_count/total_count*100:.2f}%)**\n\n"
-        new_content = re.sub(r'\*\*현재 진행 상황:.*?\*\*\n\n', progress, new_content, flags=re.DOTALL)
-
-        with open('README.md', 'w', encoding='utf-8') as f:
-            f.write(new_content)
+    # 업데이트된 내용을 삽입
+    updated_content = content.replace(problem_list_section.group(1), '\n'.join(new_lines) + '\n')
+    with open(README_PATH, 'w', encoding='utf-8') as file:
+        file.write(updated_content)
 
 if __name__ == "__main__":
-    g = Github(os.environ['GITHUB_TOKEN'])
-    repo = g.get_repo(os.environ['GITHUB_REPOSITORY'])
-    problems = get_problem_info('solutions')
-    print(f"Found problems: {problems}")  # 디버깅용
-    update_readme(problems)
+    update_readme()
