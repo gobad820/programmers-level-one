@@ -2,8 +2,16 @@
 
 <p align='center'>
     <img src=https://capsule-render.vercel.app/api?type=waving&height=210&color=gradient&text=프로그래머즈%20연습문제&textBg=false&fontColor=FFFFFF&desc=레벨1&descAlign=91&descAlignY=58&descSize=26">
+
+<div align="center">
+**프로그래머스 연습 문제 레벨 1 문제를 풀고 정리하는 개인 학습 저장소입니다.**
+</div>
+<div align="right">
+
 ![GitHub last commit](https://img.shields.io/github/last-commit/gobad820/programmers-level-one)
 ![GitHub repo size](https://img.shields.io/github/repo-size/gobad820/programmers-level-one)
+
+</div>
 
 ## ⚒️Tech Stack
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white&style=flat)
@@ -11,7 +19,6 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&style=flat)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&style=flat)
 
-프로그래머스 레벨 1 문제를 풀고 정리하는 개인 학습 저장소입니다.
 
 ## 목표
 
