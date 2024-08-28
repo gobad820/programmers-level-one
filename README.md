@@ -59,7 +59,3 @@
 
 ----
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
-<div style="font-size: 0.8em; color: gray;">
-이 프로젝트는 CC0 1.0 Universal (CC0 1.0) Public Domain Dedication 라이선스에 따라 공개되어 있습니다. 즉, 이 저작물은 법적으로 가능한 범위 내에서 전 세계 어디에서나 모든 권리가 포기되어 퍼블릭 도메인에 기증되었습니다.
-자세한 내용은 <a href="LICENSE">LICENSE</a> 파일이나 <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons</a> 웹사이트를 참고해주세요.
-</div>
