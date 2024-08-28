@@ -30,16 +30,14 @@ def update_readme():
             solution_dir = os.path.join(SOLUTIONS_DIR, problem_name)
             solution_files = [f for f in os.listdir(solution_dir) if f.endswith('.cc')] if os.path.exists(solution_dir) else []
 
+
             if solution_files:
+                print(f"Solution found for {problem_name}: {solution_files[0]}")
                 is_completed = '✅'
                 date_completed = datetime.now().strftime('%Y/%m/%d')
-                encoded_problem_name = quote(problem_name)
-                encoded_file_name = quote(solution_files[0])
-
-                problem_link = f'[{problem_name}](https://github.com/gobad820/programmers-level-one/blob/main/solutions/{encoded_problem_name}/{encoded_file_name})'
+                problem_link = f'{problem_name}'
             else:
-                is_completed = '-'
-                date_completed = '-'
+                print(f"No solution found for {problem_name}")
                 problem_link = problem_name
 
             new_line = f'| {problem_link} | {is_completed} | {date_completed} |'
