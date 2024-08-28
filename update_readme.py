@@ -1,6 +1,7 @@
 import os
 import re
 from datetime import datetime
+from urllib.parse import quote
 
 README_PATH = 'README.md'
 SOLUTIONS_DIR = 'solutions'
@@ -32,7 +33,9 @@ def update_readme():
             if solution_files:
                 is_completed = '✅'
                 date_completed = datetime.now().strftime('%Y/%m/%d')
-                problem_link = f'[{problem_name}](solutions/{problem_name}/{solution_files[0]})'
+                encoded_problem_name = quote(problem_name)
+                encoded_file_name = quote(solution_files[0])
+                problem_link = f'[{problem_name}](https://github.com/gobad820/programmers-level-one/blob/main/solutions/{encoded_problem_name}/{encoded_file_name})'
             else:
                 is_completed = '-'
                 date_completed = '-'
