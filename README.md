@@ -2,6 +2,7 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/gobad820/programmers-level-one)
 ![GitHub repo size](https://img.shields.io/github/repo-size/gobad820/programmers-level-one)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 
 프로그래머스 레벨 1 문제를 풀고 정리하는 개인 학습 저장소입니다.
 
