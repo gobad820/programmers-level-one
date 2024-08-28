@@ -41,7 +41,9 @@ def update_readme():
                 print(f"Solution found for {problem_name}: {solution_files[0]}")
                 is_completed = '✅'
                 date_completed = datetime.now().strftime('%Y/%m/%d')
-                problem_link = f'[{problem_name}](solutions/{problem_name}/{solution_files[0]})'
+                # | \[1차\] 다트 게임 | - | - |
+                # | [둘만의 암호](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EB%91%98%EB%A7%8C%EC%9D%98%20%EC%95%94%ED%98%B8/test.cc) | ✅ | 2024/08/28 |
+                problem_link = f'[{problem_name}](https://github.com/gobad820/programmers-level-one/blob/main/solutions/{problem_name}/{solution_files[0]})'
                 updated_any = True
             else:
                 print(f"No solution found for {problem_name}")
