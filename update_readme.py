@@ -1,6 +1,7 @@
 import os
 import re
 from datetime import datetime
+from urllib.parse import quote
 
 # README 파일 경로
 README_PATH = 'README.md'
@@ -41,9 +42,12 @@ def update_readme():
                 print(f"Solution found for {problem_name}: {solution_files[0]}")
                 is_completed = '✅'
                 date_completed = datetime.now().strftime('%Y/%m/%d')
-                # | \[1차\] 다트 게임 | - | - |
-                # | [둘만의 암호](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EB%91%98%EB%A7%8C%EC%9D%98%20%EC%95%94%ED%98%B8/test.cc) | ✅ | 2024/08/28 |
-                problem_link = f'[{problem_name}](https://github.com/gobad820/programmers-level-one/blob/main/solutions/{problem_name}/{solution_files[0]})'
+
+                # URL 인코딩 적용
+                encoded_problem_name = quote(problem_name)
+                encoded_file_name = quote(solution_files[0])
+
+                problem_link = f'[{problem_name}](https://github.com/gobad820/programmers-level-one/blob/main/solutions/{encoded_problem_name}/{encoded_file_name})'
                 updated_any = True
             else:
                 print(f"No solution found for {problem_name}")
