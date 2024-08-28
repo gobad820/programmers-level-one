@@ -11,12 +11,6 @@
 </div>
 
 
-<div align="center">
-
-### 프로그래머스 연습 문제 레벨 1 문제를 풀고 정리하는 개인 학습 저장소입니다.
-
-</div>
-
 ## ⚒️Tech Stack
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white&style=flat)
 ![CLion](https://img.shields.io/badge/CLion-000000?style=for-the-badge&logo=clion&logoColor=white&style=flat)
