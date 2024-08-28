@@ -1,7 +1,7 @@
 # 프로그래머스 레벨 1 문제 풀이
 
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/repo-name)
-![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/repo-name)
+![GitHub last commit](https://img.shields.io/github/last-commit/gobad820/programmers-level-one)
+![GitHub repo size](https://img.shields.io/github/repo-size/gobad820/programmers-level-one)
 
 프로그래머스 레벨 1 문제를 풀고 정리하는 개인 학습 저장소입니다.
 
