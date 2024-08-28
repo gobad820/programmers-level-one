@@ -1,7 +1,7 @@
 import os
 import re
 from datetime import datetime
-
+from urllib.parse import quote
 README_PATH = 'README.md'
 SOLUTIONS_DIR = 'solutions'
 
