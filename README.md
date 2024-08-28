@@ -1,7 +1,8 @@
 
 
 <p align='center'>
-    <img src=https://capsule-render.vercel.app/api?type=waving&height=210&color=gradient&text=프로그래머즈%20연습문제&textBg=false&fontColor=FFFFFF&desc=레벨1&descAlign=91&descAlignY=58&descSize=26">
+    <img src=https://capsule-render.vercel.app/api?
+type=waving&height=210&color=gradient&text=프로그래머즈%20연습문제&textBg=false&fontColor=FFFFFF&desc=레벨1&descAlign=91&descAlignY=58&descSize=30">
 <div align="right">
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/gobad820/programmers-level-one)
