@@ -12,7 +12,7 @@ def update_readme():
 
     # 수정된 정규표현식 패턴
     problem_list_section = re.search(r'(## 문제 목록\n\n\| 문제 이름\s*\| 완료 여부\s*\| 날짜\s*\|[\s\S]+?)(?=\n##|\Z)', content)
-
+ #a
     if not problem_list_section:
         print("문제 목록 섹션을 찾을 수 없습니다.")
         return
