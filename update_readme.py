@@ -24,6 +24,8 @@ def update_readme():
 
     # 각 문제에 대한 상태 업데이트
     new_lines = [lines[0]]  # 헤더
+    updated_any = False  # 업데이트된 내용이 있는지 확인하는 플래그
+
     for line in lines[1:]:
         match = re.match(r'\| \[(.+)\] \| ([^\|]+) \| ([^\|]+) \|', line)
         if match:
@@ -36,12 +38,13 @@ def update_readme():
             solution_files = [f for f in os.listdir(solution_dir) if f.endswith('.cc')] if os.path.exists(solution_dir) else []
 
             if solution_files:
+                print(f"Solution found for {problem_name}: {solution_files[0]}")
                 is_completed = '✅'
                 date_completed = datetime.now().strftime('%Y/%m/%d')
                 problem_link = f'[링크](solutions/{problem_name}/{solution_files[0]})'
+                updated_any = True
             else:
-                is_completed = '-'
-                date_completed = '-'
+                print(f"No solution found for {problem_name}")
                 problem_link = problem_name
 
             new_line = f'| {problem_link} | {is_completed} | {date_completed} |'
@@ -51,8 +54,13 @@ def update_readme():
 
     # 업데이트된 내용을 삽입
     updated_content = content.replace(problem_list_section.group(1), '\n'.join(new_lines) + '\n')
-    with open(README_PATH, 'w', encoding='utf-8') as file:
-        file.write(updated_content)
+
+    if updated_any:
+        with open(README_PATH, 'w', encoding='utf-8') as file:
+            file.write(updated_content)
+        print("README.md 파일이 업데이트되었습니다.")
+    else:
+        print("업데이트할 내용이 없습니다.")
 
 if __name__ == "__main__":
     update_readme()
