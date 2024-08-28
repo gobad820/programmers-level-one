@@ -39,7 +39,7 @@ std::vector<int> solution(const std::vector<std::string> &keymap, const std::vec
 }
 
 int main(int argc, char *argv[]) {
-    for (const auto num: solution(k, t)) {
+    for (const auto &num: solution(k, t)) {
         std::cout << num << " ";
     }
     return 0;
