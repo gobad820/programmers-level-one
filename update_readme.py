@@ -13,7 +13,7 @@ def update_readme():
         content = file.read()
 
     # 문제 목록 섹션 찾기
-    problem_list_section = re.search(r'(## 문제 목록\n\n\| 문제 이름 \| 완료 여부 \| 날짜 \|\n[\s\S]+?)(\*\*현재 진행 상황)', content)
+    problem_list_section = re.search(r'(## 문제 목록\n\| 문제 이름\s+\| 완료 여부\s+\| 날짜 \|[\s\S]+?)(\*\*현재 진행 상황)', content)
 
     if not problem_list_section:
         print("문제 목록 섹션을 찾을 수 없습니다.")
@@ -27,11 +27,11 @@ def update_readme():
     updated_any = False  # 업데이트된 내용이 있는지 확인하는 플래그
 
     for line in lines[1:]:
-        match = re.match(r'\| \[?(.+?)\]? \| ([^\|]+) \| ([^\|]+) \|', line)
+        match = re.match(r'\| (.+?) \| ([^\|]+) \| ([^\|]+) \|', line)
         if match:
-            problem_name = match.group(1)
-            is_completed = match.group(2)
-            date_completed = match.group(3)
+            problem_name = match.group(1).strip()
+            is_completed = match.group(2).strip()
+            date_completed = match.group(3).strip()
 
             # 해당 문제에 대한 솔루션 파일 경로
             solution_dir = os.path.join(SOLUTIONS_DIR, problem_name)
