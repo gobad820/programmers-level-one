@@ -2,6 +2,7 @@
 
 <p align='center'>
     <img src=https://capsule-render.vercel.app/api?type=waving&height=210&color=gradient&text=프로그래머즈%20연습문제&textBg=false&fontColor=FFFFFF&desc=레벨1&descAlign=91&descAlignY=58&descSize=30">
+</p>
 <div align="right">
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/gobad820/programmers-level-one)
@@ -63,6 +64,5 @@
 
 이 저장소는 개인 학습용입니다. 하지만 조언이나 개선사항이 있다면 issue를 통해 공유해 주시면 감사하겠습니다.
 
-</p>
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
