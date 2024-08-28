@@ -13,7 +13,7 @@ def update_readme():
         content = file.read()
 
     # 문제 목록 섹션 찾기
-    problem_list_section = re.search(r'(## 문제 목록\n\| 문제 이름\s+\| 완료 여부\s+\| 날짜 \|[\s\S]+?)(\*\*현재 진행 상황)', content)
+    problem_list_section = re.search(r'(## 문제 목록\n\| 문제 이름\s+\| 완료 여부\s+\| 날짜 \|[\s\S]+?)', content)
 
     if not problem_list_section:
         print("문제 목록 섹션을 찾을 수 없습니다.")
