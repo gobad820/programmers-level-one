@@ -35,7 +35,7 @@
 | [둘만의 암호](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EB%91%98%EB%A7%8C%EC%9D%98%20%EC%95%94%ED%98%B8/test.cc) | ✅ | 2024/08/28 |
 | [로또의 최고 순위와 최저 순위](https://github.com/gobad820/programmers-level-one/blob/main/solutions/로또의 최고 순위와 최저 순위/tes.cc) | ✅ | 2024/08/28 |
 | \[PCCE 기출문제\] 9번 / 이웃한 칸 | - | - |
-| 햄버거 만들기 | - | - |
+| [햄버거 만들기](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%ED%96%84%EB%B2%84%EA%B1%B0%20%EB%A7%8C%EB%93%A4%EA%B8%B0/ham.cc) | ✅ | 2024/08/28 |
 | 크레인 인형뽑기 게임 | - | - |
 | 키패드 누르기 | - | - |
 | \[PCCE 기출문제\] 10번 / 데이터 분석 | - | - |
