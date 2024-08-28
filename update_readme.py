@@ -41,7 +41,7 @@ def update_readme():
                 print(f"Solution found for {problem_name}: {solution_files[0]}")
                 is_completed = '✅'
                 date_completed = datetime.now().strftime('%Y/%m/%d')
-                problem_link = f'[링크](solutions/{problem_name}/{solution_files[0]})'
+                problem_link = f'[{problem_name}](solutions/{problem_name}/{solution_files[0]})'
                 updated_any = True
             else:
                 print(f"No solution found for {problem_name}")
