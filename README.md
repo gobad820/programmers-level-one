@@ -39,7 +39,7 @@
 
 ## 사용 기술
 
-- 언어: C++
+- 언어: C++ ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 - 개발 환경: [사용 중인 IDE 또는 텍스트 에디터]
 - 버전 관리: Git, GitHub
 
