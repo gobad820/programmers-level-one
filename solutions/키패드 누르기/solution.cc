@@ -1,5 +1,5 @@
 //
-// Created by 김상해 on 2024. 8. 28.
+// Created by pelikan on 2024. 8. 28.
 // 대충 만든 자판
 //
 
