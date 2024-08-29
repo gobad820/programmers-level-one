@@ -35,7 +35,7 @@
 | 로또의 최고 순위와 최저 순위 | - | - |
 | 이웃한 칸 | - | - |
 | 크레인 인형뽑기 게임 | - | - |
-| 키패드 누르기 | - | - |
+| [키패드 누르기](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%ED%82%A4%ED%8C%A8%EB%93%9C%20%EB%88%84%EB%A5%B4%EA%B8%B0/solution.cc) | ✅ | 2024/08/29 |
 | 데이터 분석 | - | - |
 | 성격 유형 검사하기 | - | - |
 | 신규 아이디 추천 | - | - |
