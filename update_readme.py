@@ -28,9 +28,10 @@ def update_readme():
             current_date = match.group(3).strip()
 
             solution_dir = os.path.join(SOLUTIONS_DIR, problem_name)
+            review_file = os.path.join(solution_dir, 'review.md')
             solution_files = [f for f in os.listdir(solution_dir) if f.endswith('.cc')] if os.path.exists(solution_dir) else []
 
-            if solution_files:
+            if solution_files and os.path.exists(review_file):
                 encoded_problem_name = quote(problem_name)
                 encoded_file_name = quote(solution_files[0])
                 problem_link = f'[{problem_name}](https://github.com/gobad820/programmers-level-one/blob/main/solutions/{encoded_problem_name}/{encoded_file_name})'
