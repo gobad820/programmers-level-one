@@ -5,6 +5,7 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/gobad820/programmers-level-one)
 ![GitHub repo size](https://img.shields.io/github/repo-size/gobad820/programmers-level-one)
+![Static Badge](https://img.shields.io/badge/programmers-level_one-orange)
 
 </div>
 
@@ -13,7 +14,7 @@
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white&style=flat)
 ![CLion](https://img.shields.io/badge/CLion-000000?style=for-the-badge&logo=clion&logoColor=white&style=flat)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&style=flat)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&style=flat)
+![Static Badge](https://img.shields.io/badge/programmers-level_one-blue)
 
 ## 목표
 
