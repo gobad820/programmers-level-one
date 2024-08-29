@@ -3,7 +3,7 @@ name: Update README
 on:
   push:
     paths:
-      - '../../solutions/키패드 누르기/review.md'
+      - 'solutions/**/review.md'
 
 jobs:
   update-readme:
