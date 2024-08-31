@@ -80,85 +80,18 @@
 | 🙈  | `:see_no_evil:` | `chore:` | .gitignore 추가/수정 | Add or update a .gitignore file. |
 
 
-<table>
-  <tr>
-    <th width="60">아이<br>콘</th>
-    <th width="100">코드</th>
-    <th width="100">태그</th>
-    <th width="200">설명</th>
-    <th>원문</th>
-  </tr>
-  <tr>
-    <td align="center">🎨</td>
-    <td><code>:art:</code></td>
-    <td><code>style:</code></td>
-    <td>코드의 구조/형태 개선</td>
-    <td>Improve structure / format of the code.</td>
-  </tr>
-  <tr>
-    <td align="center">⚡️</td>
-    <td><code>:zap:</code></td>
-    <td><code>perf:</code></td>
-    <td>성능 개선</td>
-    <td>Improve performance.</td>
-  </tr>
-  <tr>
-    <td align="center">🔥</td>
-    <td><code>:fire:</code></td>
-    <td><code>chore:</code></td>
-    <td>코드/파일 삭제</td>
-    <td>Remove code or files.</td>
-  </tr>
-  <tr>
-    <td align="center">🐛</td>
-    <td><code>:bug:</code></td>
-    <td><code>fix:</code></td>
-    <td>버그 수정</td>
-    <td>Fix a bug.</td>
-  </tr>
-  <tr>
-    <td align="center">✨</td>
-    <td><code>:sparkles:</code></td>
-    <td><code>feat:</code></td>
-    <td>새 기능</td>
-    <td>Introduce new features.</td>
-  </tr>
-  <tr>
-    <td align="center">📝</td>
-    <td><code>:memo:</code></td>
-    <td><code>docs:</code></td>
-    <td>문서 추가/수정</td>
-    <td>Add or update documentation.</td>
-  </tr>
-  <tr>
-    <td align="center">♻️</td>
-    <td><code>:recycle:</code></td>
-    <td><code>refactor:</code></td>
-    <td>코드 리팩토링</td>
-    <td>Refactor code.</td>
-  </tr>
-  <tr>
-    <td align="center">🚚</td>
-    <td><code>:truck:</code></td>
-    <td><code>refactor:</code></td>
-    <td>리소스 이동, 이름 변경</td>
-    <td>Move or rename resources (e.g.: files paths routes).</td>
-  </tr>
-  <tr>
-    <td align="center">💡</td>
-    <td><code>:bulb:</code></td>
-    <td><code>docs:</code></td>
-    <td>주석 추가/수정</td>
-    <td>Add or update comments in source code.</td>
-  </tr>
-  <tr>
-    <td align="center">🙈</td>
-    <td><code>:see_no_evil:</code></td>
-    <td><code>chore:</code></td>
-    <td>.gitignore 추가/수정</td>
-    <td>Add or update a .gitignore file.</td>
-  </tr>
-</table>
+| 이모지 | 코드 | 태그 | 설명 |
+|:---:|:---:|:---:|:---|
+| 🎨 | `:art:` | `style` | 코드의 구조/형태 개선 |
+| ⚡️ | `:zap:` | `perf` | 성능 개선 |
+| 🔥 | `:fire:` | `prune` | 코드/파일 삭제 |
+| 🐛 | `:bug:` | `fix` | 버그 수정 |
+| ✨ | `:sparkles:` | `feat` | 새 기능 추가 |
+| 📝 | `:memo:` | `docs` | 문서 추가/수정 |
+| ♻️ | `:recycle:` | `refactor` | 코드 리팩토링 |
+| 🚚 | `:truck:` | `move` | 리소스 이동/이름 변경 |
+| 💡 | `:bulb:` | `comment` | 주석 추가/수정 |
+| 🙈 | `:see_no_evil:` | `git` | .gitignore 수정 |
 
 ### 📂 디렉토리 구조
 
