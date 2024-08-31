@@ -1,5 +1,6 @@
 //
 // Created by pelikan on 2024. 8. 29.
+// https://school.programmers.co.kr/learn/courses/30/lessons/17682
 //
 
 /*
@@ -31,49 +32,67 @@
  * */
 #include <bits/stdc++.h>
 
-std::string dartResult = "1S2D*3T";
+std::string d = "1D2S3T*";
+const std::string bonus_string = "SDT";
+const std::string options_string = "*#";
 
 int solution(std::string dartResult) {
     int count = 0;
     int answer = 0;
 
-    int score; // 점수부
-    char bonus; // 제곱부
-    char option; // 옵션부
-
+    std::vector<int> score;
     // 3번 반복
     for (int i = 0; i < dartResult.length(); ++i) {
-        if (count >= 3) {
+        if (count > 3) {
             break; // 기회는 3번
         }
 
         // 점수부 구분하여 점수부 추가
         if (isdigit(dartResult[i])) {
-            bool flag = false;
             // 10의 경우는 어떻게?
+            std::size_t n = 1;
             if (isdigit(dartResult[i + 1])) {
+                n++;
+            }
+            score.emplace_back(std::stoi(dartResult.substr(i, n)));
+            if (n == 2) {
                 i++;
-                flag = true;
-                score = 10;
             }
-            if (!flag) {
-                score = std::atoi(reinterpret_cast<const char *>(dartResult[i]));
-            }
+            std::cout << "SCORE: " << score[count] << "\n";
             count++;
-        }
-    }
-    // 각 iteration 마다
-    // 점수부
-    // 영역부
-    // 옵션부
+        }// 제곱부 구분하여 socre 연산 득점 처리
+        else if (bonus_string.find(dartResult[i]) != std::string::npos) {
+            int temp_score = score[count - 1];
+            if (dartResult[i] == bonus_string.at(1)) { // DOUBLE
+                score[count - 1] = temp_score * temp_score;
+            } else if (dartResult[i] == bonus_string.at(2)) { // TRIPLE
+                score[count - 1] = temp_score * temp_score * temp_score;
+            } else;
+        }  // 옵션부 score 연산 시도
+        else if (options_string.find(dartResult[i]) != std::string::npos) {
+            if (dartResult[i] == options_string.at(0)) { // 스타상 이전 score와 현재 score 모두 2배
+                // 첫번쨰 시도가 아니라면
+                if (count != 0) {
+                    score[count - 2] *= 2;
+                    score[count - 1] *= 2;
+                }
+            } else { // 아차상 이번 score 점수를 음수화 시킴
+                score[count - 1] *= -1;
+            }
+        } else { ; }
 
+    }
+    for (const auto &item: score) {
+        std::cout << item << "\n";
+        answer += item;
+    }
     return answer;
 }
 
-int main(int argc, char *argv[]) {
+int main() {
     std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
     std::cout.tie(nullptr);
-    std::cout << solution(dartResult);
+    std::cout << solution(d);
     return 0;
 }
