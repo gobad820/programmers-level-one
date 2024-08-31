@@ -5,8 +5,7 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/gobad820/programmers-level-one)
 ![GitHub repo size](https://img.shields.io/github/repo-size/gobad820/programmers-level-one)
-[![Static Badge](https://img.shields.io/badge/programmers-level_one-orange)](https://school.programmers.co.kr/learn/challenges?order=acceptance_asc&levels=1&languages=cpp)
-
+<a href="https://school.programmers.co.kr/learn/challenges?order=acceptance_asc&levels=1&languages=cpp" target="_blank" rel="noopener noreferrer">![Static Badge](https://img.shields.io/badge/programmers-level_one-orange)</a>
 </div>
 
 ## ⚒️Tech Stack
