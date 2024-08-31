@@ -66,18 +66,19 @@
 
 - GitMoji를 사용한다.
 
-| 아이콘 |       코드        |     태그      | 설명               | 원문                                              |
-|:---:|:---------------:|:-----------:|:-----------------|:------------------------------------------------|
-| 🎨  |     `:art:`     |  `style:`   | 코드의 구조/형태 개선     | Improve structure / format of the code.         |
-| ⚡️  |     `:zap:`     |   `perf:`   | 성능 개선            | Improve performance.                            |
-| 🔥  |    `:fire:`     |  `chore:`   | 코드/파일 삭제         | Remove code or files.                           |
-| 🐛  |     `:bug:`     |   `fix:`    | 버그 수정            | Fix a bug.                                      |
-|  ✨  |  `:sparkles:`   |   `feat:`   | 새 기능             | Introduce new features.                         |
-| 📝  |    `:memo:`     |   `docs:`   | 문서 추가/수정         | Add or update documentation.                    |
-| ♻️  |   `:recycle:`   | `refactor:` | 코드 리팩토링          | Refactor code.                                  |
-| 🚚  |    `:truck:`    | `refactor:` | 리소스 이동, 이름 변경    | or rename resources (e.g.: files paths routes). |
-| 💡  |    `:bulb:`     |   `docs:`   | 주석 추가/수정         | Add or update comments in source code.          |
-| 🙈  | `:see_no_evil:` |  `chore:`   | .gitignore 추가/수정 | Add or update a .gitignore file.                |
+| 아이콘 | 코드 | 태그 | 설명 | 원문 |
+|:---:|:---:|:---:|:---|:---|
+| 🎨 | `:art:` | `style:` | 코드의 구조/형태 개선 | Improve structure / format of the code. |
+| ⚡️ | `:zap:` | `perf:` | 성능 개선 | Improve performance. |
+| 🔥 | `:fire:` | `chore:` | 코드/파일 삭제 | Remove code or files. |
+| 🐛 | `:bug:` | `fix:` | 버그 수정 | Fix a bug. |
+| ✨ | `:sparkles:` | `feat:` | 새 기능 | Introduce new features. |
+| 📝 | `:memo:` | `docs:` | 문서 추가/수정 | Add or update documentation. |
+| ♻️ | `:recycle:` | `refactor:` | 코드 리팩토링 | Refactor code. |
+| 🚚 | `:truck:` | `refactor:` | 리소스 이동, 이름 변경 | Move or rename resources (e.g.: files paths routes). |
+| 💡 | `:bulb:` | `docs:` | 주석 추가/수정 | Add or update comments in source code. |
+| 🙈 | `:see_no_evil:` | `chore:` | .gitignore 추가/수정 | Add or update a .gitignore file. |
+
 
 ### 📂 디렉토리 구조
 
