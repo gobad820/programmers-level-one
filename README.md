@@ -79,7 +79,7 @@
 | 💡  |    `:bulb:`     |   `docs:`   | 주석 추가/수정         | Add or update comments in source code.          |
 | 🙈  | `:see_no_evil:` |  `chore:`   | .gitignore 추가/수정 | Add or update a .gitignore file.                |
 
-### 🗂 디렉토리 구조
+### 📂 디렉토리 구조
 
 ```
 programmers-level-one/
