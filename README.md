@@ -32,7 +32,7 @@
 | [실패율](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EC%8B%A4%ED%8C%A8%EC%9C%A8/review.md) | ✅ | 2024/08/29 |
 | [다트 게임](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EB%8B%A4%ED%8A%B8%20%EA%B2%8C%EC%9E%84/review.md) | ✅ | 2024/08/31 |
 | 둘만의 암호 | - | - |
-| 로또의 최고 순위와 최저 순위 | - | - |
+| [로또의 최고 순위와 최저 순위](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EB%A1%9C%EB%98%90%EC%9D%98%20%EC%B5%9C%EA%B3%A0%20%EC%88%9C%EC%9C%84%EC%99%80%20%EC%B5%9C%EC%A0%80%20%EC%88%9C%EC%9C%84/review.md) | ✅ | 2024/08/31 |
 | 이웃한 칸 | - | - |
 | 크레인 인형뽑기 게임 | - | - |
 | 키패드 누르기 | - | - |
