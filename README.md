@@ -5,16 +5,18 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/gobad820/programmers-level-one)
 ![GitHub repo size](https://img.shields.io/github/repo-size/gobad820/programmers-level-one)
-<a href="https://school.programmers.co.kr/learn/challenges?order=acceptance_asc&levels=1&languages=cpp" target="_blank" rel="noopener noreferrer">![Static Badge](https://img.shields.io/badge/programmers-level_one-orange)</a>
+[![Static Badge](https://img.shields.io/badge/programmers-level_one-orange)](https://school.programmers.co.kr/learn/challenges?order=acceptance_asc&levels=1&languages=cpp)
+
 </div>
 
 ## ⚒️Tech Stack
 
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white&style=flat)
-![CLion](https://img.shields.io/badge/CLion-000000?style=for-the-badge&logo=clion&logoColor=white&style=flat)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&style=flat)
+[![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white&style=flat)](https://isocpp.org/)
+[![CLion](https://img.shields.io/badge/CLion-000000?style=for-the-badge&logo=clion&logoColor=white&style=flat)](https://www.jetbrains.com/clion/promo/?source=google&medium=cpc&campaign=APAC_en_KR_Clion_Branded&term=clion&content=489240779906&gad_source=1)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&style=flat)](https://git-scm.com/)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white&style=flat)](https://github.com/)
 
-## 목표
+## 🎯 목표
 
 - 프로그래머스 레벨 1 문제 전체 해결
 - 코드 품질 및 문제 해결 능력 향상
