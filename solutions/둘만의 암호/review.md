@@ -47,4 +47,3 @@
 - 찾는 요소의 인덱스를 얻기 위해서 아래와 같이 코드를 작성할 수 있다.
 - `auto it = std::find(vec.begin(), vec.end(), find_item) - vec.begin();`
 - `find`함수도 `iterator`를 리턴하므로 인덱스를 구할 수 있다.
-- 
