@@ -10,7 +10,7 @@ def update_readme():
     with open(README_PATH, 'r', encoding='utf-8') as file:
         content = file.read()
 
-    problem_list_section = re.search(r'(## 문제 목록\s*\n+\s*\|[^|]+\|[^|]+\|[^|]+\|[\s\S]+?)(?=\n##|\Z)', content)
+    problem_list_section = re.search(r'(?:##\s*📚?\s*문제\s*목록.*?)((?:\|.*?\|.*?\|.*?\|[\s\S]*?)(?=\n##|\Z))', content, re.IGNORECASE)
 
     if not problem_list_section:
         print("문제 목록 섹션을 찾을 수 없습니다.")
