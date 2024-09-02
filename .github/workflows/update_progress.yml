@@ -27,7 +27,7 @@ jobs:
           git config --local user.email "pelikan@pusan.ac.kr"
           git config --local user.name "Kim Sanghae"
           git add README.md
-          git diff --quiet && git diff --staged --quiet || git commit -m "chore: update README.md"
+          git diff --quiet && git diff --staged --quiet || git commit -m "📝chore: README.md 자동 업데이트"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
