@@ -41,7 +41,11 @@
         item = alphabet_vector[(std::find(alphabet_vector.begin(), alphabet_vector.end(), item) 
                                 - std::begin(alphabet_vector) + index) % alphabet_vector.size()];
     } 
-  
+
+**헷갈렸던 부분**
+- 인덱스와 현재 알파벳을 더했을 때 z가 넘어갔을 때의 처리가 헷갈렸다.
+- `(alphabet_vector에서의 현재 알파벳 인덱스 + (index)) % alphabet_vector.size()`을 통해 index를 더했을 때의 알파벳의 위치가 된다.
+ 
 
 ### 코드 복습
 - 찾는 요소의 인덱스를 얻기 위해서 아래와 같이 코드를 작성할 수 있다.
