@@ -182,7 +182,7 @@ std::vector<int> solution2(std::vector<int> lottos, std::vector<int> win_nums) {
   -  `[my_mod](int v_) -> int { return v_ % my_mod; }`와 같이 람다식을 수행
   - 런타임에서는 이름은 없지만 메모리 상에 암시적으로 클로저라는 객체가 생성된다.
   - 클로저 객체는 함수 객체 처럼 행동한다.
-  - `[]() { cout << "foo" << endl; }()` 코드를 실행하였다면 어떤 결과가 나올까?
+  - `[]() { cout << "checkIngredient" << endl; }()` 코드를 실행하였다면 어떤 결과가 나올까?
   - 캡처도 없고 인자도 없고 리턴 값도 없어서 그냥 foo가 출력될것이다.
   - `[](int v) { cout << v << "*6=" << v * 6 << endl; }(7);` 이 코드는 어떠한가?
   - 7이라는 인자를 넣었으므로 `7*6=42`가 출력될 것이다.
