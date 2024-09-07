@@ -21,7 +21,7 @@ jobs:
       - name: Run update script
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python update_readme.py
+        run: python ./script/update_readme.py
       - name: Commit changes
         run: |
           git config --local user.email "pelikan@pusan.ac.kr"

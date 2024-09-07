@@ -3,8 +3,8 @@ import re
 from datetime import datetime
 from urllib.parse import quote
 
-README_PATH = '../README.md'
-SOLUTIONS_DIR = '../solutions'
+README_PATH = './README.md'
+SOLUTIONS_DIR = './solutions'
 
 def update_readme():
     with open(README_PATH, 'r', encoding='utf-8') as file:
