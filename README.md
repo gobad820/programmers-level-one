@@ -79,8 +79,7 @@
 | ♻️ | `:recycle:` | `refactor` |
 | 🚚 | `:truck:` | `move` |
 | 💡 | `:bulb:` | `comment` |
-| 🙈 | `:see_no_evil:` | `git` |
-### 📂 디렉토리 구조
+| 🙈 | `:see_no_evil:` | `git` |### 📂 디렉토리 구조
 
 ```
 programmers-level-one/
