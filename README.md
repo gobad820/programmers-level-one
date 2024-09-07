@@ -26,25 +26,25 @@
 
 | 문제 이름                                                                                                                                                                                                                        | 완료여부 |     날짜     |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----:|:----------:|
-| [대충 만든 자판](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EB%8C%80%EC%B6%A9%20%EB%A7%8C%EB%93%A0%20%EC%9E%90%ED%8C%90/review.md) | ✅ | 2024/08/30 |
-| [실패율](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EC%8B%A4%ED%8C%A8%EC%9C%A8/review.md) | ✅ | 2024/08/29 |
-| [다트 게임](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EB%8B%A4%ED%8A%B8%20%EA%B2%8C%EC%9E%84/review.md) | ✅ | 2024/08/31 |
-| [둘만의 암호](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EB%91%98%EB%A7%8C%EC%9D%98%20%EC%95%94%ED%98%B8/review.md) | ✅ | 2024/09/01 |
-| [로또의 최고 순위와 최저 순위](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EB%A1%9C%EB%98%90%EC%9D%98%20%EC%B5%9C%EA%B3%A0%20%EC%88%9C%EC%9C%84%EC%99%80%20%EC%B5%9C%EC%A0%80%20%EC%88%9C%EC%9C%84/review.md) | ✅ | 2024/08/31 |
-| [햄버거 만들기](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%ED%96%84%EB%B2%84%EA%B1%B0%20%EB%A7%8C%EB%93%A4%EA%B8%B0/review.md) | ✅ | 2024/09/07 |
-| 이웃한 칸 | - | - |
-| 크레인 인형뽑기 게임 | - | - |
-| 키패드 누르기 | - | - |
-| 데이터 분석 | - | - |
-| 성격 유형 검사하기 | - | - |
-| 신규 아이디 추천 | - | - |
-| 바탕화면 정리 | - | - |
-| 개인정보 수집 유효기간 | - | - |
-| 달리기 경주 | - | - |
-| 공원 산책 | - | - |
-| 신고 결과 받기 | - | - |
-| 붕대 감기 | - | - |
-| 가장 많이 받은 선물 | - | - |
+| [대충 만든 자판](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EB%8C%80%EC%B6%A9%20%EB%A7%8C%EB%93%A0%20%EC%9E%90%ED%8C%90/review.md)                                                                     |  ✅   | 2024/08/30 |
+| [실패율](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EC%8B%A4%ED%8C%A8%EC%9C%A8/review.md)                                                                                                           |  ✅   | 2024/08/29 |
+| [다트 게임](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EB%8B%A4%ED%8A%B8%20%EA%B2%8C%EC%9E%84/review.md)                                                                                             |  ✅   | 2024/08/31 |
+| [둘만의 암호](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EB%91%98%EB%A7%8C%EC%9D%98%20%EC%95%94%ED%98%B8/review.md)                                                                                   |  ✅   | 2024/09/01 |
+| [로또의 최고 순위와 최저 순위](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%EB%A1%9C%EB%98%90%EC%9D%98%20%EC%B5%9C%EA%B3%A0%20%EC%88%9C%EC%9C%84%EC%99%80%20%EC%B5%9C%EC%A0%80%20%EC%88%9C%EC%9C%84/review.md) |  ✅   | 2024/08/31 |
+| [햄버거 만들기](https://github.com/gobad820/programmers-level-one/blob/main/solutions/%ED%96%84%EB%B2%84%EA%B1%B0%20%EB%A7%8C%EB%93%A4%EA%B8%B0/review.md)                                                                         |  ✅   | 2024/09/07 |
+| 이웃한 칸                                                                                                                                                                                                                        |  -   |     -      |
+| 크레인 인형뽑기 게임                                                                                                                                                                                                                  |  -   |     -      |
+| 키패드 누르기                                                                                                                                                                                                                      |  -   |     -      |
+| 데이터 분석                                                                                                                                                                                                                       |  -   |     -      |
+| 성격 유형 검사하기                                                                                                                                                                                                                   |  -   |     -      |
+| 신규 아이디 추천                                                                                                                                                                                                                    |  -   |     -      |
+| 바탕화면 정리                                                                                                                                                                                                                      |  -   |     -      |
+| 개인정보 수집 유효기간                                                                                                                                                                                                                 |  -   |     -      |
+| 달리기 경주                                                                                                                                                                                                                       |  -   |     -      |
+| 공원 산책                                                                                                                                                                                                                        |  -   |     -      |
+| 신고 결과 받기                                                                                                                                                                                                                     |  -   |     -      |
+| 붕대 감기                                                                                                                                                                                                                        |  -   |     -      |
+| 가장 많이 받은 선물                                                                                                                                                                                                                  |  -   |     -      |
 
 ## 🌳 브랜치 전략 및 디렉토리 구조
 
@@ -68,17 +68,20 @@
 
 - [GitMoji](https://gitmoji.dev/)를 사용한다.
 
-| 이모지 | 코드 | 태그 |
-| :---: | :---: | :---: |
-| 🎨 | `:art:` | `style` |
-| ⚡️ | `:zap:` | `perf` |
-| 🔥 | `:fire:` | `prune` |
-| 🐛 | `:bug:` | `fix` |
-| ✨ | `:sparkles:` | `feat` |
-| 📝 | `:memo:` | `docs` |
-| ♻️ | `:recycle:` | `refactor` |
-| 🚚 | `:truck:` | `move` |
-| 💡 | `:bulb:` | `comment` || 🙈 | `:see_no_evil:` | `git` |### 📂 디렉토리 구조
+| 이모지 |      코드      |     태그     |
+|:---:|:------------:|:----------:|
+| 🎨  |   `:art:`    |  `style`   |
+| ⚡️  |   `:zap:`    |   `perf`   |
+| 🔥  |   `:fire:`   |  `prune`   |
+| 🐛  |   `:bug:`    |   `fix`    |
+|  ✨  | `:sparkles:` |   `feat`   |
+| 📝  |   `:memo:`   |   `docs`   |
+| ♻️  | `:recycle:`  | `refactor` |
+| 🚚  |  `:truck:`   |   `move`   |
+| 💡  |   `:bulb:`   | `comment`  |
+| 🙈 | `:see_no_evil:` | `git` |
+
+### 📂 디렉토리 구조
 
 ```
 programmers-level-one/
